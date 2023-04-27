@@ -105,3 +105,22 @@ $ setfacl -m u:username:rwx file
 Un processus est un programme en cours d'exécution. Il est composé d'un ensemble de ressources. 
 
 Pour visualiser les processus en cours d'exécution, on utilise `ps`. Les commandes `top` et `htop` sont des interfaces graphiques pour `ps`.
+
+## GPG 
+
+GPG est un logiciel de chiffrement de données. Il permet de chiffrer des fichiers, des messages, des emails, des disques, etc.
+
+### Exercice 
+
+- Se documenter sur GPG (c'est quoi, c'est quoi l'histoire, pourquoi ? comment ?)
+- Installer GPG ou GPG2 (la différence) sur votre WSL2
+- Générer une clé GPG
+  - Chiffrement 2048 bits
+  - Expiration de 1 an 
+  - Publier la clé sur un serveur de clés
+- Un collègue utilise votre clé publiée sur le serveur de clés pour déchiffrer le fichier
+- Un collègue chiffre un fichier avec GPG et vous l'envoie
+- Vous déchiffrez le fichier avec GPG
+- Voir comment signer un commit Git avec GPG (vous pouvez utiliser le répo de la semaine 06)
+- Mettre sur votre GitHub votre clé publique GPG
+
