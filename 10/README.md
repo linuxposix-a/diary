@@ -1,5 +1,31 @@
 # Semaine 10/16
 
+- [x] Perl : Standardisé POSIX, dispo sur toute plateforme
+- [x] sed : Stream EDitor, dispo sur toute plateforme
+- [x] awk : dispo sur toute plateforme
+
+## Awk 
+
+Inverser le deuxième et le premier mot de chaque ligne avec awk
+
+```bash
+awk '{print $2 " " $1}' file.txt
+```
+
+Remplacer toutes les voyelles par des x avec awk 
+
+```bash
+awk '{gsub(/[aeiou]/,"x"); print}' file.txt
+```
+
+## Sed 
+
+BRE ERE 
+
+```bash
+sed 's/old/new/' file.txt
+```
+
 ## Perl 
 
 Oneliner == one line of code

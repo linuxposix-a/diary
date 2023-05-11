@@ -1,4 +1,2 @@
-#!/usr/bin/perl 
-
-my $toto = 42;
-
+#!/usr/bin/perl -0777 -p -i
+s/:\s*\[\K\n.*?(?=\])/$&=~s@\s+@@rgs/egs;
